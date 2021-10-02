@@ -75,16 +75,25 @@ try:
  req=requests.get(f'https://hayah.co/api/v1//users/index?i_id={user}',headers=h) 
  Name=re.findall('"s_nickname":"(.*?)"',req.text)[0] 
  Email=re.findall('"s_email":"(.*?)"',req.text)[0] 
- phone=re.findall('"s_mobile_number":"(.*?)"',req.text)[0] 
+ print("[*] Done !")
+ 
  print('\033[32m') 
+ print("")
  print('ــــــــــــــــــــــــ') 
- print(f'[+] Name: {Name}') 
- print('ــــــــــــــــــــــــ') 
+ print("")
  print(f'[+] Email: {Email}') 
+ print("")
  print('ــــــــــــــــــــــــ') 
- print(f'[+] Phone: {phone}') 
- print('ــــــــــــــــــــــــ') 
+ print("")
+ print(f'[+] Name: {Name}') 
+ print("")
+ print('ــــــــــــــــــــــــ')
+ print("")
+ print('Phone Soon . . !')
+ print("")
+ print('ــــــــــــــــــــــــ')   
+ print("")
  print('[\] Nice , Good Lack 🔭') 
  print('Snap k 8 - 5 o ') 
 except: 
- exit('[!] You have Error !')
+ exit('Not Found Email or phone or name')
